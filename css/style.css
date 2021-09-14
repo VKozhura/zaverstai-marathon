@@ -505,10 +505,8 @@ button {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-}
-
-.socials-item {
-  margin-right: 20px;
+  justify-content: space-between;
+  width: 100px;
 }
 
 .reviews {
@@ -556,13 +554,89 @@ blockquote cite {
 }
 
 .contacts {
-  /* position: relative; */
+  position: relative;
   min-height: 644px;
+  padding-top: 52px;
+}
+
+.contacts-inner {
+  width: 386px;
+  padding: 40px 35px;
+  margin-left: 102px;
+  background-color: #f7fafc;
+  border-radius: 12px;
+}
+
+.contacts-title {
+  margin: 0;
+  margin-bottom: 35px;
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 700;
+}
+
+.contacts-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.contacts-item {
+  margin-bottom: 34px;
+}
+
+.contacts-item h3 {
+  margin: 0;
+  margin-bottom: 17px;
+  font-weight: 400;
+}
+
+.contacts-item p {
+  margin: 0;
+  font-weight: 500;
+  color: #ae7c78;
+}
+
+.tel-number,
+.email {
+  color: inherit;
+  font-weight: inherit;
 }
 
 .map-img {
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   z-index: -1;
+  margin: auto;
+}
+
+.main-footer {
+  background-color: #ae7c78;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0 41px 0;
+}
+
+.footer-logo {
+  flex-shrink: 0;
+}
+
+.footer-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 795px;
+}
+
+.menu-item a {
+  color: #ffffff;
 }
